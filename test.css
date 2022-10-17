@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #8f7a66;
+}
+
+.el {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+
+    background-image: url('https://images.unsplash.com/photo-1528287942171-fbe365d1d9ac?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&w=1200&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    mask-image: url('img/levels.svg');
+    mask-size: 211px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    -webkit-mask-image: url('img/levels.svg');
+    -webkit-mask-size: 211px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+
+}

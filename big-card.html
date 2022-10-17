@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+      <!-- loc 8: spb-x -->
+  
+  <div id='tag-spb-x' class="geotag tag-spb-x index2" onclick = "tagpressed('#tag-spb-x', 'playSpbX', '.spb-x', 'spb-x', 'tag-spb-x')"></div>
+  
+  <div id="spb-x" class="card-big spb-x hide">
+  
+  <div class="rect-bigger">
+    <div class="row-1"><div id="lp" class="ph lp selected"></div><div id="kv" class="ph kv collapsed"></div><div id="tk" class="ph tk collapsed"></div><div id="ak" class="ph collapsed ak"></div><div id="mch" class="ph collapsed mch"></div><div id="vf" class="ph collapsed vf"></div><div id="na" class="ph collapsed na"></div><div id="me" class="ph collapsed me"></div><div id="ap" class="ph collapsed ap"></div></div>
+    <div class="row-2"><div id="pe" class="ph collapsed pe"></div><div id="asm" class="ph collapsed asm"></div><div id="sp" class="ph collapsed sp"></div><div id="lf" class="ph collapsed lf"></div><div id="av" class="ph collapsed av"></div><div id="lb" class="ph collapsed lb"></div><div id="office" class="ph collapsed office"></div></div>
+	<div class="bio bio-spb-lp">
+        <div id="photo-bigger" class="photo-bigger phlp"></div>
+        <p class="name">Лера Пешковская (Вилочка)</p>
+        <div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Васька, Финский залив</p></div>
+        <div class="player"><img id="playSpbX" class="playSpbX" onclick = "playpressed('audio/l-p.ogg', 'playSpbX', 'tag-spb-x', 'inspbx', '16s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inspbx" class="inner"></div></div></div>
+    </div>
+
+    <div if='biokv' class="bio bio-spb-kv">
+        <div id="photo-bigger" class="photo-bigger phlp"></div>
+        <p class="name">Катя Вдовина</p>
+        <div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Московская</p></div>
+        <div class="player"><img id="playSpbX" class="playSpbX" onclick = "playpressed('audio/audio2.mp3', 'playSpbX', 'tag-spb-x', 'inspbx', '16s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inspbx" class="inner"></div></div></div>
+    </div>
+	
+  </div>  
+   
+  <div id = "close-fin" class="close" onclick = "closepressed('.spb-x', 'tag-spb-x', '#tag-spb-x', 'inspbx')"></div> 
+  </div>
+  
+<!-- audio -->
+
+<audio id="audio" src="audio/audio2.mp3" ></audio>
+
+<!-- scripts -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script>
+      lightbox.option({
+        'showImageNumberLabel': false,	
+      })
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding:0;
+}
+
+/* Group 1 */
+
+.card-base{position: absolute;
+width: 312px;
+height: 220px;
+}
+
+
+
+
+/* Rectangle 184 */
+
+.rect-big{position: absolute;
+width: 312px;
+height: 191px;
+
+background: #FF0000;
+border-radius: 25px;
+}
+
+/* Ellipse 1 */
+
+.photo{position: absolute;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: #11FF0C;
+border: 4px solid #0056FC;
+/* transform-origin: center; */
+transform: translateX(136px) translateY(-50%);
+}
+

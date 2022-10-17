@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+      <!-- loc 8: spb-x -->
+  
+  <div id='tag-spb-x' class="geotag tag-spb-x index2" onclick = "tagpressed('#tag-spb-x', 'playLp', '.spb-x', 'spb-x', 'tag-spb-x')"><p>16</p></div>
+  
+  <div id="spb-x" class="card-big spb-x hide">
+  
+  <div class="rect-bigger">
+    <!-- ряды фото -->
+    <div class="row-1"><div id="lp" class="ph lp selected" onclick="replaceBio('biolp', '#biolp', '#lp', 'playLp', 'audio/l-p.ogg')"></div><div id="kv" class="ph kv collapsed" onclick="replaceBio('biokv', '#biokv', '#kv', 'playKv', 'audio/kv.ogg')"></div><div id="tk" class="ph tk collapsed" onclick="replaceBio('biotk', '#biotk', '#tk', 'playTk','audio/tk.m4a')"></div><div id="ak" class="ph collapsed ak" onclick="replaceBio('bioak', '#bioak', '#ak', 'playAk','audio/ak.m4a')"></div><div id="mch" class="ph collapsed mch" onclick="replaceBio('biomch', '#biomch', '#mch', 'playMch', 'audio/audio2.mp3')"></div><div id="vf" class="ph collapsed vf" onclick="replaceBio('biovf', '#biovf', '#vf', 'playVf','audio/vf.m4a')"></div><div id="na" class="ph collapsed na" onclick="replaceBio('biona', '#biona', '#na', 'playNa','audio/na.m4a')"></div><div id="me" class="ph collapsed me" onclick="replaceBio('biome', '#biome', '#me', 'playMe','audio/audio2.mp3')"></div><div id="ap" class="ph collapsed ap"  onclick="replaceBio('bioap', '#bioap', '#ap', 'playAp','audio/ap.m4a')"></div></div>
+    <div class="row-2"><div id="pe" class="ph collapsed pe" onclick="replaceBio('biope', '#biope', '#pe', 'playPe','audio/pe.ogg')"></div><div id="asm" class="ph collapsed asm" onclick="replaceBio('bioasm', '#bioasm', '#asm', 'playAsm','audio/asm.m4a')"></div><div id="sp" class="ph collapsed sp" onclick="replaceBio('biosp', '#biosp', '#sp', 'playSp','audio/sp.ogg')"></div><div id="lf" class="ph collapsed lf" onclick="replaceBio('biolf', '#biolf', '#lf', 'playLf','audio/lf.wav')"></div><div id="av" class="ph collapsed av" onclick="replaceBio('bioav', '#bioav', '#av', 'playAv','audio/audio2.mp3')"></div><div id="lb" class="ph collapsed lb" onclick="replaceBio('biolb', '#biolb', '#lb', 'playLb','audio/lb.ogg')"></div><div id="office" class="ph collapsed office" onclick="replaceBio('biooffice', '#biooffice', '#office', 'playOffice','audio/office.mp3')"></div></div>
+    
+    <!-- карточки с био  -->
+
+    <!-- row 1 -->
+
+    <div id='biolp' class="bio bio-spb-lp">
+        <div id="photo-bigger" class="photo-bigger phlp"></div>
+        <p class="name">Лера Пешковская (Вилочка)</p>
+        <div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Васька, Финский залив</p></div>
+        <div class="player"><img id="playLp" class="playLp play playerspb" onclick = "playpressedSpb('audio/l-p.ogg', 'playLp', 'lp', 'inLp', '16s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inLp" class="inner"></div></div></div>
+    </div>
+
+    <div id='biokv' class="bio bio-spb-kv" style="display:none">
+        <div id="photo-bigger" class="photo-bigger phkv"></div>
+        <p class="name">Катя Вдовина</p>
+        <div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Московская</p></div>
+        <div class="player"><img id="playKv" class="playKv pause playerspb" onclick = "playpressedSpb('audio/kv.ogg', 'playKv', 'kv', 'inKv', '19s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inKv" class="inner"></div></div></div>
+    </div>
+
+    <div id='biotk' class="bio bio-spb-tk" style="display:none">
+        <div id="photo-bigger" class="photo-bigger phtk"></div>
+        <p class="name">Таня Коленова</p>
+        <div class="loc"><img src="img/geo.png" alt=""><p>Россия, Ленинградская область, Девяткино</p></div>
+        <div class="player"><img id="playTk" class="playTk pause playerspb" onclick = "playpressedSpb('audio/tk.m4a', 'playTk', 'tk', 'inTk', '19s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inTk" class="inner"></div></div></div>
+    </div>
+	
+
+    <div id='bioak' class="bio bio-spb-ak" style="display:none">
+      <div id="photo-bigger" class="photo-bigger phak"></div>
+      <p class="name">Аня Колчина</p>
+      <div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Московская</p></div>
+      <div class="player"><img id="playAk" class="playAk pause playerspb" onclick = "playpressedSpb('audio/ak.m4a', 'playAk', 'ak', 'inAk', '19s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inAk" class="inner"></div></div></div>
+  </div>
+
+
+  <div id='biomch' class="bio bio-spb-mch" style="display:none">
+    <div id="photo-bigger" class="photo-bigger phmch"></div>
+    <p class="name">Маша Черных</p>
+    <div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Октябрьская набережная 40</p></div>
+    <div class="player"><img id="playMch" class="playMch pause playerspb" onclick = "playpressedSpb('audio/audio2.mp3', 'playMch', 'mch', 'inMch', '16s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inMch" class="inner"></div></div></div>
+</div>
+
+<div id='biovf' class="bio bio-spb-vf" style="display:none">
+  <div id="photo-bigger" class="photo-bigger phvf"></div>
+  <p class="name">Варя Фурман</p>
+  <div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Какой-то бар на Маяковского</p></div>
+  <div class="player"><img id="playVf" class="playVf pause playerspb" onclick = "playpressedSpb('audio/vf.m4a', 'playVf', 'vf', 'inVf', '52s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inVf" class="inner"></div></div></div>
+</div>
+
+
+<div id='biona' class="bio bio-spb-na" style="display:none">
+  <div id="photo-bigger" class="photo-bigger phna"></div>
+  <p class="name">Настя Алексеева</p>
+  <div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Подписные Издания</p></div>
+  <div class="player"><img id="playNa" class="playNa pause playerspb" onclick = "playpressedSpb('audio/na.m4a', 'playNa', 'na', 'inNa', '13s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inNa" class="inner"></div></div></div>
+</div>
+
+
+<div id='biome' class="bio bio-spb-me" style="display:none">
+  <div id="photo-bigger" class="photo-bigger phme"></div>
+  <p class="name">Маша Ефимова</p>
+  <div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Машина кухня</p></div>
+  <div class="player"><img id="playMe" class="playMe pause playerspb" onclick = "playpressedSpb('audio/audio2.mp3', 'playMe', 'me', 'inMe', '16s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inMe" class="inner"></div></div></div>
+</div>
+
+<div id='bioap' class="bio bio-spb-ap" style="display:none">
+  <div id="photo-bigger" class="photo-bigger phap pause playerspb"></div>
+  <p class="name">Аксинья Петрова</p>
+  <div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Шуваловский парк</p></div>
+  <div class="player"><img id="playAp" class="playAp pause playerspb" onclick = "playpressedSpb('audio/ap.m4a', 'playAp', 'ap', 'inAp', '16s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inAp" class="inner"></div></div></div>
+</div>
+
+<!-- row 2 -->
+
+<div id='biope' class="bio bio-spb-pe" style="display:none">
+  <div id="photo-bigger" class="photo-bigger phpe"></div>
+  <p class="name">Полина Евстратова</p>
+  <div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Петроградка</p></div>
+  <div class="player"><img id="playPe" class="playPe pause playerspb" onclick = "playpressedSpb('audio/pe.ogg', 'playPe', 'pe', 'inPe', '16s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inPe" class="inner"></div></div></div>
+</div>
+
+
+<div id='bioasm' class="bio bio-spb-asm" style="display:none">
+<div id="photo-bigger" class="photo-bigger phasm"></div>
+<p class="name">Аня Смолина</p>
+<div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Петроградка</p></div>
+<div class="player"><img id="playAsm" class="playAsm pause playerspb" onclick = "playpressedSpb('audio/asm.m4a', 'playAsm', 'asm', 'inAsm', '14s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inAsm" class="inner"></div></div></div>
+</div>
+
+
+<div id='biosp' class="bio bio-spb-sp" style="display:none">
+<div id="photo-bigger" class="photo-bigger phsp"></div>
+<p class="name">Соня Пантелеева</p>
+<div class="loc"><img src="img/geo.png" alt=""><p>Россия, Ленинградская область, Девяткино</p></div>
+<div class="player"><img id="playSp" class="playSp pause playerspb" onclick = "playpressedSpb('audio/sp.ogg', 'playSp', 'sp', 'inSp', '42s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inSp" class="inner"></div></div></div>
+</div>
+
+<div id='biolf' class="bio bio-spb-lf" style="display:none">
+<div id="photo-bigger" class="photo-bigger phlf"></div>
+<p class="name">Лена Фомина</p>
+<div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Грин Сити</p></div>
+<div class="player"><img id="playLf" class="playLf pause playerspb" onclick = "playpressedSpb('audio/lf.wav', 'playLf', 'lf', 'inLf', '4s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inLf" class="inner"></div></div></div>
+</div>
+
+
+<div id='bioav' class="bio bio-spb-av" style="display:none">
+<div id="photo-bigger" class="photo-bigger phav"></div>
+<p class="name">Алёна Внутских</p>
+<div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Васильевский остров</p></div>
+<div class="player"><img id="playAv" class="playAv pause playerspb" onclick = "playpressedSpb('audio/audio2.mp3', 'playAv', 'av', 'inAv', '16s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inAv" class="inner"></div></div></div>
+</div>
+
+
+<div id='biolb' class="bio bio-spb-lb" style="display:none">
+<div id="photo-bigger" class="photo-bigger phlb"></div>
+<p class="name">Лена Баркова</p>
+<div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Академическая</p></div>
+<div class="player"><img id="playLb" class="playLb pause playerspb" onclick = "playpressedSpb('audio/lb.ogg', 'playLb', 'lb', 'inLb', '15s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inLb" class="inner"></div></div></div>
+</div>
+
+<div id='biooffice' class="bio bio-spb-office" style="display:none">
+<div id="photo-bigger" class="photo-bigger phoffice"></div>
+<p class="name">Офис DGA</p>
+<div class="loc"><img src="img/geo.png" alt=""><p>Россия, Санкт-Петербург, Офис</p></div>
+<div class="player"><img id="playOffice" class="playOffice pause playerspb" onclick = "playpressedSpb('audio/office.mp3', 'playOffice', 'office', 'inOffice', '15s')" src="img/play.png" alt=""><div class="audio-progress"><div id="inOffice" class="inner"></div></div></div>
+</div>
+	
+  </div>  
+   
+  <div id = "close-fin" class="close" onclick = "closepressed('.spb-x', 'tag-spb-x', '#tag-spb-x', 'inspbx')"></div> 
+  </div>
+  
+<!-- audio -->
+
+<audio id="audio" src='audio/l-p.ogg' ></audio>
+
+<!-- scripts -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script>
+      lightbox.option({
+        'showImageNumberLabel': false,	
+      })
+  </script>
+</body>
+</html>
