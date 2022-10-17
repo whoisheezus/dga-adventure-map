@@ -1089,10 +1089,12 @@
 		
 		document.addEventListener("wheel", function (e) {
 			if (e.deltaY > 0) {
-				zoomElement.style.transform = `scale(${zoom += zoomSpeed})`;
-			} else {
 				zoomElement.style.transform = `scale(${zoom -= zoomSpeed})`;
+			} else {
+				zoomElement.style.transform = `scale(${zoom += zoomSpeed})`;
 			}
+
+			
 			});
 
 			
