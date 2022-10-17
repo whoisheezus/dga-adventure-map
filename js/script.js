@@ -25,9 +25,16 @@ function tagpressed(tagidhash, playid, cardclassdot, cardid, tagid, playsrc){
             $(this).addClass('collapsed');
         });
         //
+        if (tagid == 'spbnew') {
+          $('.spbnew').children().removeClass('collapsed');
+          $('.spbnew').children().css('border', '4px solid #F4B4D4');
+
+        };
+        //
         $('.inner').each(function () {
           this.style.width = '0%';
       });
+      
         //
         document.getElementById("audio").src = playsrc;
         audio.pause();
@@ -36,6 +43,7 @@ function tagpressed(tagidhash, playid, cardclassdot, cardid, tagid, playsrc){
         // document.getElementById(tagid).style.zIndex = '3';
         $(cardclassdot).fadeIn(300);
         document.getElementById(cardid).style.visibility = 'visible';
+        document.getElementById(tagid).style.border = '4px solid #F4B4D4';
         document.getElementById(tagid).onmouseout = function () {
             this.style.border = '4px solid #F4B4D4';
         };
@@ -43,6 +51,10 @@ function tagpressed(tagidhash, playid, cardclassdot, cardid, tagid, playsrc){
             this.style.border = '4px solid #F4B4D4';
         };
 }
+
+// тэг спб
+
+
 
 // функция нажатия воспроизведения
 
@@ -126,6 +138,12 @@ function closepressed(cardclassdot, tagid, tagidhash, inid){
         };
         document.getElementById(tagid).onmouseover = function () {
             this.style.border = '4px solid #F4B4D4';
+        };
+
+        if (tagid == 'spbnew') {
+          $('.spbnew').children().addClass('collapsed');
+          $('.spbnew').children().css('border', '4px solid #fff');
+
         };
 
         if ($(tagidhash).is('.index2')) {
@@ -221,6 +239,51 @@ $(document).ready(function () {
   $(".hide").hide();
   $(".white-bg").hide();
   $(".gallery").hide();
+
+  //
+
+  // 
+  $(function() {
+    $('.tag-spb-2').hover(function() {
+      $('.tag-spb-x').css('border', '4px solid #F4B4D4'); 
+      $('.tag-spb-2').css('border', '4px solid #F4B4D4');  
+      $('.tag-spb-1').css('border', '4px solid #F4B4D4');
+    }, function() {
+      // on mouseout, reset the background colour
+      $('.tag-spb-x').css('border', '4px solid #fff'); 
+      $('.tag-spb-2').css('border', '4px solid #fff');
+      $('.tag-spb-1').css('border', '4px solid #fff');
+    });
+  });
+
+  $(function() {
+    $('.tag-spb-1').hover(function() {
+      $('.tag-spb-x').css('border', '4px solid #F4B4D4'); 
+      $('.tag-spb-2').css('border', '4px solid #F4B4D4');  
+      $('.tag-spb-1').css('border', '4px solid #F4B4D4');
+    }, function() {
+      // on mouseout, reset the background colour
+      $('.tag-spb-x').css('border', '4px solid #fff'); 
+      $('.tag-spb-2').css('border', '4px solid #fff');
+      $('.tag-spb-1').css('border', '4px solid #fff');
+    });
+  });
+
+  $(function() {
+    $('.tag-spb-x').hover(function() {
+      $('.tag-spb-x').css('border', '4px solid #F4B4D4'); 
+      $('.tag-spb-2').css('border', '4px solid #F4B4D4');  
+      $('.tag-spb-1').css('border', '4px solid #F4B4D4');
+    }, function() {
+      // on mouseout, reset the background colour
+      $('.tag-spb-x').css('border', '4px solid #fff'); 
+      $('.tag-spb-2').css('border', '4px solid #fff');
+      $('.tag-spb-1').css('border', '4px solid #fff');
+    });
+  });
+  //
+  
+
 
   $(".memBut").click(function () {
     // $(".svg-div").hide();
