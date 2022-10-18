@@ -142,10 +142,10 @@ z-index: 2;
   /* DGA Adventure map */
 
 position: absolute;
-width: 106px;
+width: 121px;
 height: 57px;
 left: 105px;
-top: 50px;
+top: 61px;
 display: inline-block;
 z-index: 3;
 font-family: 'Carter One';
