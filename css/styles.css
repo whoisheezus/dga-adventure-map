@@ -818,7 +818,11 @@ background: #dcdcdc;
 }
 
 .svg-div img{
-width: 1920px;
+/* width: 1920px; */
+width: 4343px;
+position: absolute;
+top: -468px;
+left: -1024px;
 }
 
 /* photos */
