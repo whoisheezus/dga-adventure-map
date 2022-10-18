@@ -1083,19 +1083,55 @@
 	
 	<!-- <script src="js/move.js"></script> -->
 	<script>
+	var map = true;
 	const zoomElement = document.querySelector(".main")
 		let zoom = 1;
-		const zoomSpeed = 0.03;
-		
-		document.addEventListener("wheel", function (e) {
+		var zoomSpeed = 0.03;
+
+		if (map){
+			document.addEventListener("wheel", function (e) {
 			if (e.deltaY > 0) {
-				zoomElement.style.transform = `scale(${zoom -= zoomSpeed})`;
+				
+				if(zoom > 0.5){
+					zoomElement.style.transform = `scale(${zoom = zoom - zoomSpeed})`;
+				} else {
+					zoom = 0.5;
+				}
 			} else {
-				zoomElement.style.transform = `scale(${zoom += zoomSpeed})`;
+				if(zoom < 1.5){
+				zoomElement.style.transform = `scale(${zoom = zoom + zoomSpeed})`;
+				} else {
+					zoom = 1.5;
+				}
 			}
 
 			
 			});
+		}
+		else{
+			document.addEventListener("wheel", function (e) {
+			if (e.deltaY > 0) {
+				
+				if(zoom > 0.5){
+					zoomElement.style.transform = `scale(${zoom = zoom - zoomSpeed})`;
+				} else {
+					zoom = 0.5;
+				}
+			} else {
+				if(zoom < 1.5){
+				zoomElement.style.transform = `scale(${zoom = zoom + zoomSpeed})`;
+				} else {
+					zoom = 1.5;
+				}
+			}
+
+			
+			});
+
+		}
+		
+		
+		
 
 			
 			</script>

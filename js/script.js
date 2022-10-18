@@ -287,6 +287,8 @@ $(document).ready(function () {
 
   $(".memBut").click(function () {
     // $(".svg-div").hide();
+    map = false;
+    zoomSpeed = 0;
     $(".white-bg").fadeIn(500);
     $(".svg-div").fadeOut(500);
     $('.geotag').each(function () {
@@ -308,6 +310,8 @@ $(document).ready(function () {
 
   $(".mapBut").click(function () {
     // $(".svg-div").hide();
+    map = true;
+    zoomSpeed = 0.03;
     $(".white-bg").fadeOut(500);
     $(".svg-div").fadeIn(500);
     document.getElementById("mapBut").style.backgroundColor = '#EBF190';
