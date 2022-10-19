@@ -167,13 +167,14 @@ color: #000000;
 
 .gallery-wrap{
   width: 100vw;
+  height: 100vh;
   margin: 196px 0 0 0;
   position: fixed;
   top: 0;
   left: 0;
   background-color: transparent;
   /* height: calc(100vh - 196px); */
-  height: 2000px;
+  /* height: 2000px; */
 
   z-index: -1;
   
@@ -1203,3 +1204,11 @@ z-index: 4;
       transform:translate(-50%, -50%);
     }
   }
+
+
+  @media screen and ( max-height: 820px ) { 
+    .gellry{
+      height: 500px;
+    }
+    
+   }
